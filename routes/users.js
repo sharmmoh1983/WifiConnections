@@ -43,7 +43,7 @@ router.post('/', function(req, res, next) {
 // Initialize wifi module
 // Absolutely necessary even to set interface to null
     wifi.init({
-        iface : null // network interface, choose a random wifi interface if set to null
+        iface : 'wlan0'// network interface, choose a random wifi interface if set to null
     });
 
 // Scan networks
