@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 
-    var wifi = require('node-wifi');
+   /* var wifi = require('node-wifi');
 
 // Initialize wifi module
 // Absolutely necessary even to set interface to null
@@ -31,17 +31,27 @@ router.get('/', function(req, res, next) {
            },
            ...
            ];
-           */
+
         }
     });
-  //res.send('respond with a resource');
-});
-router.post('/', function(req, res, next) {
+  //res.send('respond with a resource');*/
 
-   var piWifi= require('pi-wifi');
+
+    var piWifi= require('pi-wifi');
 
     piWifi.scan(function(err,result){
 
+        res.send(result);
+    })
+});
+router.post('/', function(req, res, next) {
+
+    var piWifi= require('pi-wifi');
+
+    piWifi.connect( "Belong47GK43RD",  "GT7NMPMYP3",function(err,result){
+
+        if(err) res.send(err)
+        else
         res.send(result);
     })
 
