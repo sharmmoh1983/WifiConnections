@@ -48,7 +48,7 @@ router.post('/', function(req, res, next) {
 
     var piWifi= require('pi-wifi');
 
-    piWifi.connect( "Belong47GK43RD",  "GT7NMPMYP3",function(err,result){
+    piWifi.connect( "HUAWEI_ALE-L21_18FD",  "mo123456",function(err,result){
         console.log("In connect")
         console.log("error :" +err)
         console.log(result)
