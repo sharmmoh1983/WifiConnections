@@ -38,7 +38,7 @@ router.get('/', function(req, res, next) {
 });
 router.post('/', function(req, res, next) {
 
-   var piWifi= require('npm install pi-wifi');
+   var piWifi= require('pi-wifi');
 
     piWifi.scan(function(err,result){
 
