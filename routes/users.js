@@ -38,11 +38,17 @@ router.get('/', function(req, res, next) {
 });
 router.post('/', function(req, res, next) {
 
-    var wifi = require('node-wifi');
+   var piWifi= require('npm install pi-wifi');
 
-// Initialize wifi module
-// Absolutely necessary even to set interface to null
-    wifi.init({
+    piWifi.scan(function(err,result){
+
+        res.send(result);
+    })
+
+    // var wifi = require('node-wifi');
+
+
+  /*  wifi.init({
         iface : null// network interface, choose a random wifi interface if set to null
     });
 
@@ -58,7 +64,7 @@ router.post('/', function(req, res, next) {
             }
             console.log(currentConnections);
             res.send(currentConnections)
-          /*
+
            // you may have several connections
            [
            {
@@ -70,9 +76,9 @@ router.post('/', function(req, res, next) {
            security: '...' // not available on linux
            }
            ]
-           */
+
         });
-    });
+    });*/
 
 });
 
