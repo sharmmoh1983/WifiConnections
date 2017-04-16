@@ -49,7 +49,9 @@ router.post('/', function(req, res, next) {
     var piWifi= require('pi-wifi');
 
     piWifi.connect( "Belong47GK43RD",  "GT7NMPMYP3",function(err,result){
-
+        console.log("In connect")
+        console.log("error :" +err)
+        console.log(result)
         if(err) res.send(err)
         else
         res.send(result);
