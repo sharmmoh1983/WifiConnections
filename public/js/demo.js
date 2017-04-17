@@ -152,6 +152,7 @@ require([
                     * @param {Object} event   The Ractive wrapper for the event that triggered the function
                     * @return {undefined}
                     */
+
                   expandWifi:   function (event) {
                                     var selectedNetworkItem = ractive.get('selectedNetworkItem'),
                                         currentSelection = $(event.node);
@@ -161,7 +162,13 @@ require([
                                     currentSelection.toggleClass("active");
                                     ractive.set('selectedNetworkItem', currentSelection);
                                     ractive.set('selectedNetwork', event.context);
-                                }
+                                },
+
+                 "join-network":  function () {
+                                          connectWifiNetwork();     //Checks the status immediately, then starts the daemon
+                                        // networksUpdateTimerId = setInterval(updateWifiNetworksList, WIFI_CHECK_INTERVAL);
+                                       //ractive.set('networksPaused', false);
+          }
                 });
 
 
@@ -211,6 +218,19 @@ require([
         ractive.set('networksUpdateError', true);
       });
   }
+
+    function connectWifiNetwork () {
+        $.ajax(WIFI_SERVICE_URL, {
+            dataType: 'json',
+            jsonp: false
+        })
+            .then(function (networks) {
+                ractive.set('networksUpdateError', false);
+                ractive.set('wifiNetworks', networks);
+            }).fail(function () {
+            ractive.set('networksUpdateError', true);
+        });
+    }
 
   //Start the daemons that will check the battery and networks status...
   batteryUpdateTimerId = setInterval(updateBatteryStatus, BATTERY_CHECK_INTERVAL);

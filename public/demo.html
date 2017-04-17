@@ -16,13 +16,15 @@
 
 {{#selectedNetwork !== null}}
               <div class='inner-panel network-details-panel'>
-              <span class='title'>Details about {{selectedNetwork.ssid}}</span>
+              <span class='title'>{{selectedNetwork.ssid}} requires a WPA password to connect</span>
               <br>
               <br>
               {{#selectedNetwork:key}}
                 <span class='key'>{{key}}:</span> <span class='value'>{{this}}</span>
                 <br>
               {{/selectedNetwork}}
+             Password: <input type="password" />
+             <input type="submit" name="submit" value="Join" id="submit" on-click="join-networ"/>
               </div>
             {{/selectedNetwork}}
 
