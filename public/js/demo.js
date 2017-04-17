@@ -150,11 +150,12 @@ require([
                     *
                     * Perform a series of actions to give more info about the wifi network entry selected from the list.
                     * @param {Object} event   The Ractive wrapper for the event that triggered the function
-                    * @return {undefined}
+                    * @return {undefine
                     */
 
                   expandWifi:   function (event) {
                                     var selectedNetworkItem = ractive.get('selectedNetworkItem'),
+
                                         currentSelection = $(event.node);
                                     if (selectedNetworkItem && $.isFunction(selectedNetworkItem.toggleClass)) {
                                       selectedNetworkItem.toggleClass("active");

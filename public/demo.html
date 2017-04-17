@@ -12,23 +12,7 @@
       <div class='container'>
         <div class='row-spacer'>
         </div>
-        <div class='row'>
 
-{{#selectedNetwork !== null}}
-              <div class='inner-panel network-details-panel'>
-              <span class='title'>{{selectedNetwork.ssid}} requires a WPA password to connect</span>
-              <br>
-              <br>
-              {{#selectedNetwork:key}}
-                <span class='key'>{{key}}:</span> <span class='value'>{{this}}</span>
-                <br>
-              {{/selectedNetwork}}
-             Password: <input type="password" />
-             <input type="submit" name="submit" value="Join" id="submit" on-click="join-networ"/>
-              </div>
-            {{/selectedNetwork}}
-
-          </div>
 
           <div class='col-md-6 outer-panel'>
             <div class='inner-panel networks-panel'>
@@ -55,6 +39,18 @@
                   <p class="list-group-item-text">{{bssid}}</p>
                    <div class='protected-wifi'>
                     </div>
+               <div class='row'>
+                 {{#selectedNetwork !== null}}
+              <div class='inner-panel network-details-panel'>
+                Password: <input type="password" />
+              <br>
+               <br>
+             <input type="submit" name="submit" value="Join" id="submit" on-click="join-network"/>
+             <input type="submit" name="submit" value="Cancel" id="submit" on-click="join-network"/>
+              </div>
+            {{/selectedNetwork}}
+
+          </div>
                   </a>
               {{/wifiNetworks}}
               </div>
