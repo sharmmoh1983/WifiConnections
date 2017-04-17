@@ -1,0 +1,203 @@
+[
+  {
+    "bssid": "7c:26:64:47:a2:77",
+    "frequency": 2462,
+    "signalLevel": -42,
+    "flags": "[WPA2-PSK-CCMP][WPS][ESS]",
+    "ssid": "Belong47GK43RD"
+  },
+  {
+    "bssid": "e4:f4:c6:3d:33:fe",
+    "frequency": 2412,
+    "signalLevel": -54,
+    "flags": "[WPA2-PSK-CCMP][WPS][ESS]",
+    "ssid": "NETGEAR03"
+  },
+  {
+    "bssid": "dc:ef:09:ac:a9:c5",
+    "frequency": 2462,
+    "signalLevel": -65,
+    "flags": "[WPA2-PSK-CCMP][WPS][ESS]",
+    "ssid": "TOM and Jerry"
+  },
+  {
+    "bssid": "c4:ea:1d:44:62:0b",
+    "frequency": 2412,
+    "signalLevel": -67,
+    "flags": "[WPA2-PSK-CCMP][WPS][ESS]",
+    "ssid": "Black Pearl"
+  },
+  {
+    "bssid": "7e:04:d0:1d:e8:85",
+    "frequency": 2437,
+    "signalLevel": -77,
+    "flags": "[WPA2-PSK-CCMP][ESS]"
+  },
+  {
+    "bssid": "80:ea:23:5f:ae:06",
+    "frequency": 2462,
+    "signalLevel": -75,
+    "flags": "[WPA2-PSK-CCMP][ESS]",
+    "ssid": "PS4-882421FF106C"
+  },
+  {
+    "bssid": "20:0c:c8:23:f2:19",
+    "frequency": 2462,
+    "signalLevel": -80,
+    "flags": "[WPA2-PSK-CCMP][WPS][ESS]",
+    "ssid": "NETGEAR88"
+  },
+  {
+    "bssid": "00:26:5a:30:c0:60",
+    "frequency": 2462,
+    "signalLevel": -80,
+    "flags": "[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]",
+    "ssid": "shiawase"
+  },
+  {
+    "bssid": "c4:01:7c:16:53:b8",
+    "frequency": 2447,
+    "signalLevel": -85,
+    "flags": "[ESS]",
+    "ssid": "Perth WiFi"
+  },
+  {
+    "bssid": "c0:8a:de:4f:8c:18",
+    "frequency": 2437,
+    "signalLevel": -92,
+    "flags": "[ESS]",
+    "ssid": "Mantra@Murray"
+  },
+  {
+    "bssid": "e2:b9:e5:61:d0:c9",
+    "frequency": 2412,
+    "signalLevel": -84,
+    "flags": "[ESS]",
+    "ssid": "Telstra Air"
+  },
+  {
+    "bssid": "18:f1:45:13:aa:6d",
+    "frequency": 2422,
+    "signalLevel": -84,
+    "flags": "[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]",
+    "ssid": "NetComm 1313"
+  },
+  {
+    "bssid": "18:f1:45:6c:88:55",
+    "frequency": 2462,
+    "signalLevel": -70,
+    "flags": "[WPA2-PSK-CCMP][ESS]",
+    "ssid": "NetComm 2468"
+  },
+  {
+    "bssid": "80:37:73:a1:74:3c",
+    "frequency": 2437,
+    "signalLevel": -88,
+    "flags": "[WPA2-PSK-CCMP][WPS][ESS]",
+    "ssid": "Ifflawade"
+  },
+  {
+    "bssid": "0e:84:dc:13:df:a2",
+    "frequency": 2462,
+    "signalLevel": -89,
+    "flags": "[WPA2-PSK-CCMP][WPS][ESS][P2P]",
+    "ssid": "DIRECT-EJ-BRAVIA"
+  },
+  {
+    "bssid": "e0:b9:e5:61:d0:c7",
+    "frequency": 2412,
+    "signalLevel": -81,
+    "flags": "[WPA2-PSK-CCMP][WPS][ESS]",
+    "ssid": "TheSargents"
+  },
+  {
+    "bssid": "00:60:0f:a1:74:3d",
+    "frequency": 2437,
+    "signalLevel": -82,
+    "flags": "[WPA2-PSK-CCMP][ESS]",
+    "ssid": "IfflaWadeGuest"
+  },
+  {
+    "bssid": "c8:51:95:45:d9:54",
+    "frequency": 2452,
+    "signalLevel": -91,
+    "flags": "[WPA-PSK-CCMP][WPA2-PSK-CCMP][WPS][ESS]",
+    "ssid": "ototgo.com.au"
+  },
+  {
+    "bssid": "5c:a8:6a:fe:a0:18",
+    "frequency": 2457,
+    "signalLevel": -93,
+    "flags": "[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]",
+    "ssid": "DODO-A00F"
+  },
+  {
+    "bssid": "70:10:5c:63:21:e0",
+    "frequency": 2437,
+    "signalLevel": -90,
+    "flags": "[WEP][ESS]",
+    "ssid": "Vanilla"
+  },
+  {
+    "bssid": "2c:e6:cc:d7:12:d8",
+    "frequency": 2412,
+    "signalLevel": -83,
+    "flags": "[ESS]",
+    "ssid": "VOIP 5 Gig"
+  },
+  {
+    "bssid": "2c:e6:cc:17:12:d8",
+    "frequency": 2412,
+    "signalLevel": -86,
+    "flags": "[ESS]",
+    "ssid": "HolidayInn"
+  },
+  {
+    "bssid": "c0:8a:de:0f:94:08",
+    "frequency": 2437,
+    "signalLevel": -81,
+    "flags": "[WPA2-PSK-CCMP][ESS]"
+  },
+  {
+    "bssid": "a8:c8:3a:2b:94:d0",
+    "frequency": 2447,
+    "signalLevel": -88,
+    "flags": "[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]",
+    "ssid": "WiFi-WEG9"
+  },
+  {
+    "bssid": "84:db:ac:41:ac:65",
+    "frequency": 2422,
+    "signalLevel": -89,
+    "flags": "[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]",
+    "ssid": "TPG-MWTP"
+  },
+  {
+    "bssid": "c4:04:15:74:df:9c",
+    "frequency": 2427,
+    "signalLevel": -91,
+    "flags": "[WPA2-PSK-CCMP][WPS][ESS]",
+    "ssid": "NETGEAR34"
+  },
+  {
+    "bssid": "5c:a8:6a:09:2f:c8",
+    "frequency": 2427,
+    "signalLevel": -91,
+    "flags": "[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]",
+    "ssid": "WiFi-AL7S"
+  },
+  {
+    "bssid": "78:a0:51:29:83:50",
+    "frequency": 2447,
+    "signalLevel": -94,
+    "flags": "[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]",
+    "ssid": "ii29834Fprimary"
+  },
+  {
+    "bssid": "e2:b9:e5:61:d0:ca",
+    "frequency": 2412,
+    "signalLevel": -81,
+    "flags": "[ESS]",
+    "ssid": "Fon WiFi"
+  }
+]

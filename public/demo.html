@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Available Networks</title>  </head>
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <body>
+    <div id='panels'></div>
+
+    <script id='meterVizTemplate' type='text/ractive'>
+
+      <div class='container'>
+        <div class='row-spacer'>
+        </div>
+        <div class='row'>
+
+{{#selectedNetwork !== null}}
+              <div class='inner-panel network-details-panel'>
+              <span class='title'>Details about {{selectedNetwork.ESSID}}</span>
+              <br>
+              <br>
+              {{#selectedNetwork:key}}
+                <span class='key'>{{key}}:</span> <span class='value'>{{this}}</span>
+                <br>
+              {{/selectedNetwork}}
+              </div>
+            {{/selectedNetwork}}
+
+          </div>
+
+          <div class='col-md-6 outer-panel'>
+            <div class='inner-panel networks-panel'>
+              <span class='title'>Available WiFi Networks</span>
+
+              <div class='update-error' style={{!networksUpdateError ? 'visibility:hidden;' : ''}} data-toggle="tooltip" data-placement="top" title='Unable to refresh WiFi data'>
+              </div>
+
+              <!-- The two buttons must share the same place, so we must use display:none instead of visibility:hidden -->
+              <div class='play-button' on-click='networks-play' style={{!networksPaused ? 'display:none;' : ''}} data-toggle="tooltip" data-placement="top" title='Restarts WiFi updates'>
+              </div>
+              <div class='pause-button' on-click='networks-pause' style={{networksPaused ? 'display:none;' : ''}} data-toggle="tooltip" data-placement="top" title='Pause WiFi updates'>
+              </div>
+
+              <br>
+              <br>
+              {{^wifiNetworks}}
+                  LOADING...
+              {{/wifiNetworks}}
+              <div class="list-group">
+              {{#wifiNetworks: num}}
+                <a href="javascript:" class="list-group-item" id={{'network_' + num}} on-click="expandWifi">
+                  <h5 class="list-group-item-heading">{{ssid}}</h5>
+                  <p class="list-group-item-text">{{bssid}}</p>
+                   <div class='protected-wifi'>
+                    </div>
+                  </a>
+              {{/wifiNetworks}}
+              </div>
+
+            </div>
+          </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </script>
+    <script data-main="js/demo" src="js/lib/require.js"></script>
+
+  </body>
+</html>
